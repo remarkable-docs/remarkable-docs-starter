@@ -1,0 +1,6 @@
+docsDir: ./
+outDir: .generated
+ui:
+  sidebar:
+    - /installation
+    - menu: Components

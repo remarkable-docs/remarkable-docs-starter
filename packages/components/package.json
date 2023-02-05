@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "example-lib",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "types": "es/index.d.ts",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "src",
+    "styles.css"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:css && npm run build:es && npm run build:lib",
+    "build:css": "lessc-watch src/index.less styles.css -ru=all -d src --build",
+    "build:es": "tsc --outDir es --module esnext",
+    "build:lib": "tsc --outDir lib",
+    "clean": "rimraf styles.css && rimraf es && rimraf lib",
+    "watch": "concurrently -k -r 'npm:watch:*'",
+    "watch:less": "lessc-watch src/index.less styles.css -ru=all -d src",
+    "watch:ts": "tsc --outDir es --module esnext --watch --pretty false --preserveWatchOutput true"
+  },
+  "devDependencies": {
+    "@types/react": ">=17.0.0",
+    "concurrently": "^7.6.0",
+    "lessc-watch": "^1.0.2",
+    "react": "^18.2.0",
+    "rimraf": "^4.0.7",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "with-classname-prefix": "^1.0.1"
+  }
+}

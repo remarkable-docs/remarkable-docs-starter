@@ -1,0 +1,33 @@
+{
+  "name": "documents",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build:docs": "remarkable-docs --config src/docs",
+    "dev": "vite",
+    "build": "npm run build:docs && tsc && vite build",
+    "preview": "vite preview",
+    "watch:docs": "remarkable-docs --watch --config src/docs",
+    "watch:vite": "vite",
+    "watch": "concurrently -k -r 'npm:watch:*'"
+  },
+  "dependencies": {
+    "@remarkable-docs/core": "0.0.1-alpha.2",
+    "@remarkable-docs/ui": "0.0.1-alpha.2",
+    "@types/markdown-it": "*",
+    "concurrently": "^7.6.0",
+    "example-lib": "workspace:^",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "remarkable-docs": "0.0.1-alpha.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
+}

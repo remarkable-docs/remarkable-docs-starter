@@ -1,0 +1,18 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["ES2015", "DOM"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "lib",
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es5"
+  }
+}
