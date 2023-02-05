@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import DocsApp from './docs/DocsApp'
+import './main.less'
 
 const router = createBrowserRouter([
   {
