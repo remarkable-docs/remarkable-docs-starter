@@ -1,0 +1,8 @@
+docsDir: ./src/docs
+outDir: ./src/.generated-docs
+emptyOutDir: true
+logLevel: verbose
+ui:
+  colorScheme: light
+  permalink:
+    preferShortUrlForMainLanguage: true

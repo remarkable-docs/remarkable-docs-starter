@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html[data-docs-ui-color-scheme='light'] {
+  .docs-ui-source-code {
+    @import (less) '../public/prism.css';
+
+    .token.operator {
+      background-color: transparent;
+    }
+  }
+}
+
+html[data-docs-ui-color-scheme='dark'] {
+  .docs-ui-source-code {
+    @import (less) '../node_modules/prism-themes/themes/prism-atom-dark.css';
+  }
+}
