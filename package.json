@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "watch": "pnpm run --parallel watch"
+    "watch": "pnpm run --parallel watch",
+    "prepare": "pnpm -F @remarkable-docs/example-ui build"
   }
 }

@@ -10,7 +10,6 @@ Buttons allow users to take actions with a single click.
 ## Usage
 
 ```tsx --preview --open
-import '@remarkable-docs/example-ui/styles.css'
 import { Button } from '@remarkable-docs/example-ui'
 
 export default () => {

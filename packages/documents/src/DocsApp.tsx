@@ -1,5 +1,7 @@
 import '@remarkable-docs/ui/styles.css'
+import '@remarkable-docs/example-ui/styles.css'
 import './index.less'
+
 import React, { useCallback } from 'react'
 import { DocsUi } from '@remarkable-docs/ui'
 import { useLocation, useNavigate } from 'react-router-dom'
