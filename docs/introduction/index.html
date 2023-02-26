@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html data-docs-ui-rendered="true" data-docs-ui-color-scheme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-rh="true">Introduction to Remarkable Docs</title>
+    <style type="text/css">
+      html[data-docs-ui-rendered='true'][data-docs-ui-color-scheme='light'] {
+        color: #000;
+        background: #fff;
+      }
+      html[data-docs-ui-rendered='true'][data-docs-ui-color-scheme='dark'] {
+        color: #fff;
+        background: #1b1b1b;
+      }
+    </style>
+    <script type="text/javascript">
+      ;(function () {
+        var html = document.getElementsByTagName('html')[0]
+        var mode = localStorage.getItem('docs_ui:color_scheme')
+
+        if (mode !== 'dark' && mode !== 'light') {
+          mode =
+            window.matchMedia &&
+            matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+        }
+
+        html.setAttribute('data-docs-ui-color-scheme', mode)
+      })()
+    </script>
+    <script src="/prism.js"></script>
+    <script type="module" crossorigin src="/assets/index-44f2c6a7.js"></script>
+    <link rel="stylesheet" href="/assets/style-681706f4.css">
+    <meta data-rh="true" name="description" content="Remarkable Docs is a simple and flexible documentation tool for React."/>
+  </head>
+  <body>
+    <div id="root"><!--$--><div class="docs-ui-layout-container"><div class="docs-ui-layout-header-wrapper"><header class="docs-ui-layout-header"><div class="docs-ui-header-flex-keep docs-ui-header-title-wrapper"><div class="docs-ui-icon" data-icon-name="book" data-css-vertical-center-block="true"><svg viewBox="0 0 32 32"><polygon stroke-width="2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="4,11 15,18 28,9 17,2 "></polygon><path stroke-width="2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M4,11v6l11,7l13-9l0,0c-1.2-1.2-1.5-3-0.7-4.5L28,9"></path><path stroke-width="2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M4,17v6l11,7l13-9l0,0c-1.2-1.2-1.5-3-0.7-4.5L28,15"></path></svg></div><div class="docs-ui-header-flex-keep docs-ui-header-title">Documentation</div></div><div class="docs-ui-header-flex-expand"></div><div class="docs-ui-header-flex-keep docs-ui-header-flex-center docs-ui-header-search"><div class="docs-ui-search-input-wrapper"><div class="docs-ui-icon" data-icon-name="search" data-css-vertical-center-block="true"><svg width="800px" height="800px" viewBox="0 0 24 24"><path d="M21 21L16.6569 16.6569M16.6569 16.6569C18.1046 15.2091 19 13.2091 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C13.2091 19 15.2091 18.1046 16.6569 16.6569Z" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><defs><clipPath><rect width="24" height="24" fill="#fff"></rect></clipPath></defs></svg></div><div class="docs-ui-search-input-text">Search docs</div></div></div></header><div class="docs-ui-layout-action-bar-wrapper"><div class="docs-ui-layout-action-bar"><div class="docs-ui-action-bar-breadcrumb"><div class="docs-ui-breadcrumb-wrapper"><a class="docs-ui-breadcrumb-item" href="/introduction/" title="Introduction"><div class="docs-ui-icon" data-icon-name="home-filled" data-css-vertical-center-block="true"><svg viewBox="0 0 512 512"><g><polygon points="434.162,293.382 434.162,493.862 308.321,493.862 308.321,368.583 203.682,368.583 203.682,493.862 77.841,493.862 77.841,293.382 256.002,153.862 "></polygon><polygon points="0,242.682 256,38.93 512,242.682 482.21,285.764 256,105.722 29.79,285.764 "></polygon><polygon points="439.853,18.138 439.853,148.538 376.573,98.138 376.573,18.138 "></polygon></g></svg></div></a><div class="docs-ui-breadcrumb-icon docs-ui-breadcrumb-arrow docs-ui-icon" data-icon-name="caret-right" data-css-vertical-center-block="true"><svg viewBox="0 0 24 24" style="transform:rotate(-90deg)"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 8.79289C6.68342 8.40237 7.31658 8.40237 7.70711 8.79289L12 13.0858L16.2929 8.79289C16.6834 8.40237 17.3166 8.40237 17.7071 8.79289C18.0976 9.18342 18.0976 9.81658 17.7071 10.2071L12.7071 15.2071C12.3166 15.5976 11.6834 15.5976 11.2929 15.2071L6.29289 10.2071C5.90237 9.81658 5.90237 9.18342 6.29289 8.79289Z"></path></svg></div><a class="docs-ui-breadcrumb-item docs-ui-breadcrumb-link" href="/introduction/" title="Introduction"><span>Introduction</span></a></div></div></div></div></div><div class="docs-ui-layout-main-wrapper"><aside class="docs-ui-layout-left-sidebar"><nav class="docs-ui-menu-wrapper"><ul class="docs-ui-menu-list"><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link docs-ui-menu-active" href="/introduction/" title="Introduction">Introduction</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/get-started/" title="Getting Started">Getting Started</a></li><li class="docs-ui-menu-item docs-ui-menu-group-wrapper"><span class="docs-ui-menu-group">Guides</span></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/guides/preview-components/" title="Preview Components">Preview Components</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/guides/embed-components/" title="Embed Components">Embed Components</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/guides/use-renderers/" title="Use Renderers">Use Renderers</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/guides/custom-renderers/" title="Custom Renderers">Custom Renderers</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/advanced/ssg/" title="Static Site Generation">Static Site Generation</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper docs-ui-menu-last-group-item"><a class="docs-ui-menu-link" href="/guides/i18n/" title="I18n">I18n</a></li><li class="docs-ui-menu-item docs-ui-menu-group-wrapper"><span class="docs-ui-menu-group">Builtin Renderers</span></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/builtin-renderers/table-renderer/" title="Table Renderers">Table Renderers</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper docs-ui-menu-last-group-item"><a class="docs-ui-menu-link" href="/builtin-renderers/props-renderer/" title="Props Renderer">Props Renderer</a></li><li class="docs-ui-menu-item docs-ui-menu-group-wrapper"><span class="docs-ui-menu-group">Settings</span></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/settings/config-and-ui-settings/" title="Config &amp; UI Settings">Config &amp; UI Settings</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper"><a class="docs-ui-menu-link" href="/settings/doc-settings/" title="Doc Settings">Doc Settings</a></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper docs-ui-menu-last-group-item"><a class="docs-ui-menu-link" href="/settings/preview-settings/" title="Preview Settings">Preview Settings</a></li><li class="docs-ui-menu-item docs-ui-menu-group-wrapper"><span class="docs-ui-menu-group">Advanced</span></li><li class="docs-ui-menu-item docs-ui-menu-link-wrapper docs-ui-menu-last-group-item"><a class="docs-ui-menu-link" href="/advanced/custom-theme/" title="Custom Theme">Custom Theme</a></li></ul></nav></aside><aside class="docs-ui-layout-right-sidebar"></aside><main class="docs-ui-layout-main"><article class="docs-ui-doc-markdown docs-ui-layout-article"><!--$?--><template id="B:0"></template><!--/$--></article></main></div></div><!--/$--><div hidden id="S:0"><div class="docs-ui-doc-markdown-body"><h1 id="introduction-to-remarkable-docs" tabindex="-1">Introduction to Remarkable Docs<a class="docs-ui-anchor" href="#introduction-to-remarkable-docs" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h1>
+<p>Remarkable Docs is a simple and flexible documentation tool for <a href="https://reactjs.org/">React</a>.</p>
+<p>You can document, preview and test your <a href="https://reactjs.org/">React</a> Components with Remarkable Docs.</p>
+<h2 id="the-way-to-document-a-react-component" tabindex="-1">The Way to Document a React Component<a class="docs-ui-anchor" href="#the-way-to-document-a-react-component" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h2>
+<p>Before we dive into any details, I want to give you an example of how we can document a <a href="https://reactjs.org/">React</a> component using Remarkable Docs.</p>
+<p>Below is the markdown we use to document the <strong>Button</strong> component from the <code>@remarkable-docs/example-ui</code> package.</p></div><div class="docs-ui-source-code-wrapper"><div class="docs-ui-source-code"><pre class="language-md"><code class="language-md">---
+slug: /components/button
+menu: Components
+---
+
+# Button
+
+Buttons allow users to take actions with a single click.
+
+## Usage
+
+```tsx --preview --open
+import &#x27;@remarkable-docs/example-ui/styles.css&#x27;
+import { Button } from &#x27;@remarkable-docs/example-ui&#x27;
+
+export default () =&gt; {
+  return (
+    &lt;Button onClick={() =&gt; alert(&#x27;You just clicked the button!&#x27;)}&gt;
+      Button
+    &lt;/Button&gt;
+  )
+}
+```
+
+## Props
+
+```yml --renderer=props
+- name: className
+  type: string
+  desc: Specify the css class name.
+- name: onClick
+  type: &#x27;(e: MouseEvent) =&gt; void&#x27;
+  desc: Specify the click event listener.
+```
+</code></pre></div><div class="docs-ui-source-code-copy" title="Copy"><div class="docs-ui-icon" data-icon-name="copy"><svg viewBox="0 0 512 512"><g transform="translate(85.333333, 42.666667)"><path d="M341.333333,85.3333333 L341.333333,405.333333 L85.3333333,405.333333 L85.3333333,85.3333333 L341.333333,85.3333333 Z M298.666667,128 L128,128 L128,362.666667 L298.666667,362.666667 L298.666667,128 Z M234.666667,7.10542736e-15 L234.666667,42.6666667 L42.6666667,42.6666667 L42.6666667,298.666667 L1.42108547e-14,298.666667 L1.42108547e-14,7.10542736e-15 L234.666667,7.10542736e-15 Z"></path></g></svg></div></div></div><div class="docs-ui-doc-markdown-body"><p>And this markdown will be rendered to a document page like the following screenshot.</p>
+<p><img src="/assets/example-button-a0cc3899.png" alt="button example"></p>
+<p>As you can see in the markdown file, we have written two code blocks. The first one is a <code>tsx</code> code block which exports a React component as the default export value. Note that in this code block, we also added two flags. There are:</p>
+<ul>
+<li><code>--preview</code> Indicates that this is a preview block. The React component exported by this code block will be rendered to the page and the source code should be displayed too.</li>
+<li><code>--open</code> By default, the source code panel of the preview is collapsed. We add this flag to make it open by default.</li>
+</ul>
+<p>The second code block is a <code>yml</code> code block. In this code block, we defined a list of objects. Add we also added a special flag to this code block. Which is:</p>
+<ul>
+<li><code>--renderer=props</code> Indicates that the data defined in this code block should be passed to the Renderer called &quot;props&quot;. The <strong>props</strong> renderer is a built-in renderer that renders the given data to a property table. We provide several built-in renders, and you can add yours easily.</li>
+</ul>
+<p>Check the screenshot above, you can see that the preview block and property table have been rendered properly. That is how we document React components with Remarkable Docs.</p>
+<h2 id="design-principles-and-features" tabindex="-1">Design Principles and Features<a class="docs-ui-anchor" href="#design-principles-and-features" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h2>
+<h3 id="keep-your-source-code-clean" tabindex="-1">Keep Your Source Code Clean<a class="docs-ui-anchor" href="#keep-your-source-code-clean" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h3>
+<p>Remarkable Docs will not install any dependencies into your source code package. Instead, we'll start a new project to document your components. This will keep your source code package clean and you don't have to worry about documentation tools messing up your source code. And documenting your components in a standalone package is more like how a real user will use your components.</p>
+<p>Remarkable Docs consists of several packages. The main package just converts markdown files into <a href="https://reactjs.org/">React</a> components, and the UI package is used to render the components generated by the main package. We provide a default template, which contains our default UI package (if the default UI package cannot meet your needs, you can replace it with yours).</p>
+<h3 id="extended-markdown" tabindex="-1">Extended Markdown<a class="docs-ui-anchor" href="#extended-markdown" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h3>
+<p>Remarkable Docs extended markdown by taking advantage of the fenced code block. You can preview your components in markdown and display their associated source code. You can also embed your components into markdown to make them part of the document. And you can extend markdown by writing your renderer.</p>
+<h3 id="use-react-components-to-render-pages" tabindex="-1">Use React Components to Render Pages<a class="docs-ui-anchor" href="#use-react-components-to-render-pages" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h3>
+<p>We use markdown as the primary format to write documents for the components. In addition, we can also use the <a href="https://reactjs.org/">React</a> component as the source of the document. In this case, we can fully control how to render the entire page. When you have some special pages on the document website (such as the homepage), this is useful.</p>
+<h3 id="static-site-generation" tabindex="-1">Static Site Generation<a class="docs-ui-anchor" href="#static-site-generation" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h3>
+<p>We provide you with a default template that uses <a href="https://vitejs.dev/">Vite</a> as the build tool. In this template, we also provide you with a script to pre-render your website before publishing (also known as static site generation).</p>
+<h3 id="internationalization-(i18n)" tabindex="-1">Internationalization (i18n)<a class="docs-ui-anchor" href="#internationalization-(i18n)" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h3>
+<p>Remarkable Docs supports i18n out of the box. You can add multiple languages to your documents easily.</p>
+<h3 id="search-your-docs" tabindex="-1">Search Your Docs<a class="docs-ui-anchor" href="#search-your-docs" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h3>
+<p>With Remarkable Docs, You can search your documents by title, summary or tags.</p></div></div><script>function $RC(a,b){a=document.getElementById(a);b=document.getElementById(b);b.parentNode.removeChild(b);if(a){a=a.previousSibling;var f=a.parentNode,c=a.nextSibling,e=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d)if(0===e)break;else e--;else"$"!==d&&"$?"!==d&&"$!"!==d||e++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;b.firstChild;)f.insertBefore(b.firstChild,c);a.data="$";a._reactRetry&&a._reactRetry()}};$RC("B:0","S:0")</script></div>
+    
+  </body>
+</html>

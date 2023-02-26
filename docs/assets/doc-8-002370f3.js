@@ -1,0 +1,1 @@
+import{j as a}from"./index-44f2c6a7.js";const o='<h1 id="i18n" tabindex="-1">I18n<a class="docs-ui-anchor" href="#i18n" aria-hidden="true"><span class="docs-ui-octicon"></span></a></h1>',s=[{tag:"h1",title:"I18n",slug:"i18n"}],t=[{index:0,type:"html",html:o}],i=({renderer:n})=>n?a(n,{blocks:t,headings:s}):null;i.displayName="DocMarkdownProvider";export{i as default};
