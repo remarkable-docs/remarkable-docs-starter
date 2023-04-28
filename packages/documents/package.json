@@ -14,9 +14,9 @@
     "watch": "concurrently -k -r 'npm:watch:*'"
   },
   "dependencies": {
-    "@remarkable-docs/core": "0.0.1-alpha.7",
+    "@remarkable-docs/core": "0.0.1-alpha.8",
     "@remarkable-docs/example-ui": "workspace:^",
-    "@remarkable-docs/ui": "0.0.1-alpha.7",
+    "@remarkable-docs/ui": "0.0.1-alpha.8",
     "@types/markdown-it": "*",
     "concurrently": "^7.6.0",
     "prism-themes": "^1.9.0",
@@ -30,7 +30,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
-    "remarkable-docs": "0.0.1-alpha.7",
+    "remarkable-docs": "0.0.1-alpha.8",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }

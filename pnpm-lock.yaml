@@ -26,9 +26,9 @@ importers:
 
   packages/documents:
     specifiers:
-      '@remarkable-docs/core': 0.0.1-alpha.7
+      '@remarkable-docs/core': 0.0.1-alpha.8
       '@remarkable-docs/example-ui': workspace:^
-      '@remarkable-docs/ui': 0.0.1-alpha.7
+      '@remarkable-docs/ui': 0.0.1-alpha.8
       '@types/markdown-it': '*'
       '@types/node': ^18.14.1
       '@types/react': ^18.0.27
@@ -40,13 +40,13 @@ importers:
       react-dom: ^18.2.0
       react-helmet-async: ^1.3.0
       react-router-dom: ^6.8.0
-      remarkable-docs: 0.0.1-alpha.7
+      remarkable-docs: 0.0.1-alpha.8
       typescript: ^4.9.3
       vite: ^4.1.0
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.7_hvw7xpooo56se2fhmcuna5ceqa
+      '@remarkable-docs/core': 0.0.1-alpha.8_hvw7xpooo56se2fhmcuna5ceqa
       '@remarkable-docs/example-ui': link:../components
-      '@remarkable-docs/ui': 0.0.1-alpha.7_x7hnmeq37bfh5rslwr5y73fffi
+      '@remarkable-docs/ui': 0.0.1-alpha.8_x7hnmeq37bfh5rslwr5y73fffi
       '@types/markdown-it': 12.2.3
       concurrently: 7.6.0
       prism-themes: 1.9.0
@@ -59,7 +59,7 @@ importers:
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
       '@vitejs/plugin-react': 3.1.0_vite@4.1.1
-      remarkable-docs: 0.0.1-alpha.7_hvw7xpooo56se2fhmcuna5ceqa
+      remarkable-docs: 0.0.1-alpha.8_hvw7xpooo56se2fhmcuna5ceqa
       typescript: 4.9.5
       vite: 4.1.1_@types+node@18.14.1
 
@@ -535,8 +535,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@remarkable-docs/core/0.0.1-alpha.7_hvw7xpooo56se2fhmcuna5ceqa:
-    resolution: {integrity: sha512-TtnBUhC7KdtKx0Kmuq9l5oiq6a1Uno0be+5R3AnciSeIpP4+NzJYMSxlrG2gU5jgSnnWMq+4+AddWwi+g5ESCw==}
+  /@remarkable-docs/core/0.0.1-alpha.8_hvw7xpooo56se2fhmcuna5ceqa:
+    resolution: {integrity: sha512-++8z++PxLhsvq3CkXA8gpGIsf6nNklOdg2bKSjRPjWdpUyD8WAj0JuSNAkU7D8COOCw4fIau9kJG07KttSwGgw==}
     peerDependencies:
       '@types/react': '>=17.0.0'
       '@types/react-dom': '>=17.0.0'
@@ -544,14 +544,14 @@ packages:
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
 
-  /@remarkable-docs/ui/0.0.1-alpha.7_x7hnmeq37bfh5rslwr5y73fffi:
-    resolution: {integrity: sha512-g8PJLShptPyooqIhihuSJonYEVhPma2BrZjCLwNgrFS7d7MBqwkXL6HdkvhoYnRXNDnwUJrY/UVqq0cv0hlnWA==}
+  /@remarkable-docs/ui/0.0.1-alpha.8_x7hnmeq37bfh5rslwr5y73fffi:
+    resolution: {integrity: sha512-iXB62XE6asOz7ELMjNYMvR83BkE/4JezQEiz/ochPZeOfmQ3IR8F4kAMcIxLpJEEYgisWKyRbVK4298PU1rgNg==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
       react-helmet-async: '>=1.0.0'
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.7_hvw7xpooo56se2fhmcuna5ceqa
+      '@remarkable-docs/core': 0.0.1-alpha.8_hvw7xpooo56se2fhmcuna5ceqa
       '@types/markdown-it': 12.2.3
       '@types/markdown-it-attrs': 4.1.0
       markdown-it: 13.0.1
@@ -1340,11 +1340,11 @@ packages:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
-  /remarkable-docs/0.0.1-alpha.7_hvw7xpooo56se2fhmcuna5ceqa:
-    resolution: {integrity: sha512-udfLSnySWGU5jzF3k/DFXnac5CDoXUBVq6mwXvokoLxMx2PQky9bcBdY+MDoWK0V7CotSO0/AHTEOa7vsMihaw==}
+  /remarkable-docs/0.0.1-alpha.8_hvw7xpooo56se2fhmcuna5ceqa:
+    resolution: {integrity: sha512-S37XJuFDlPlSJRlAXlyHDw+vmMkcKVXNiqHlmLDOyQlYyaXHpCV/Ysfp3tzqiMfzupPrcET7QSPU0p1ulLD6AA==}
     hasBin: true
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.7_hvw7xpooo56se2fhmcuna5ceqa
+      '@remarkable-docs/core': 0.0.1-alpha.8_hvw7xpooo56se2fhmcuna5ceqa
       '@types/fs-extra': 9.0.13
       '@types/markdown-it': 12.2.3
       '@types/markdown-it-attrs': 4.1.0
