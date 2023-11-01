@@ -1,7 +1,5 @@
 import React from "react"
-import { withClassNamePrefix } from 'with-classname-prefix'
-
-const cls = withClassNamePrefix('myui')
+import prefixClass from "../internal/prefixClass"
 
 export type Props = React.HTMLAttributes<HTMLButtonElement>
 
@@ -12,7 +10,7 @@ export default function ({
   return (
     <button
       {...props}
-      className={cls.raw(className).addPrefixed('Button')}
+      className={prefixClass.raw(className).addPrefixed('Button')}
     />
   )
 }

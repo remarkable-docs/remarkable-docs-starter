@@ -21,8 +21,8 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       lessc-watch:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -1210,8 +1210,8 @@ packages:
       - supports-color
     dev: true
 
-  /lessc-watch@1.1.0:
-    resolution: {integrity: sha512-u4K2LCchP6DYNj3weKZygBWOo+KsE/R0TSA31sncQWKBGLB2Jvi+hhmH0t4mRF/sGXX61qQNt7A2CoPHIV2lzg==}
+  /lessc-watch@1.2.0:
+    resolution: {integrity: sha512-b42Uvd5xJAt33eKbvhU1TkqYtFUnz5m1xkKNyEBcvLDo8cNBUKlAqZCP9Z/f0XDY0oaToRQyfAMG3kHpB+alkw==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3

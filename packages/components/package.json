@@ -13,12 +13,12 @@
   ],
   "scripts": {
     "build": "npm run clean && npm run build:less && npm run build:es && npm run build:lib",
-    "build:less": "lessc-watch src/index.less styles.css -ru=all -d=src --global-vars=prefix=myui --build",
+    "build:less": "lessc-watch -f lessc-config.json --build",
     "build:es": "tsc --outDir es --module esnext",
     "build:lib": "tsc --outDir lib",
     "clean": "rimraf styles.css && rimraf es && rimraf lib",
     "watch": "concurrently -k -r 'npm:watch:*'",
-    "watch:less": "lessc-watch src/index.less styles.css -ru=all -d=src --global-vars=prefix=myui",
+    "watch:less": "lessc-watch -f lessc-config.json",
     "watch:ts": "tsc --outDir es --module esnext --watch --pretty false --preserveWatchOutput true"
   },
   "dependencies": {
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/react": "^18.2.33",
     "concurrently": "^8.2.2",
-    "lessc-watch": "^1.1.0",
+    "lessc-watch": "^1.2.0",
     "react": "^18.2.0",
     "rimraf": "^5.0.5",
     "typescript": "^5.2.2"

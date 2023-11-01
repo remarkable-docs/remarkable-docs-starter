@@ -1,0 +1,11 @@
+{
+  "entry": "./src/index.less",
+  "output": "./styles.css",
+  "watchDir": "./src",
+  "lessOptions": {
+    "rewriteUrls": "all",
+    "globalVars": {
+      "prefix": "example-ui"
+    }
+  }
+}
