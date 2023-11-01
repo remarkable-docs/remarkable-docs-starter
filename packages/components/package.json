@@ -22,7 +22,7 @@
     "watch:ts": "tsc --outDir es --module esnext --watch --pretty false --preserveWatchOutput true"
   },
   "dependencies": {
-    "with-classname-prefix": "^1.0.1"
+    "with-classname-prefix": "^1.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.33",

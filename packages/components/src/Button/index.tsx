@@ -1,16 +1,21 @@
 import React from "react"
-import prefixClass from "../internal/prefixClass"
+import createClassNamePrefix from "../internal/createClassNamePrefix"
 
-export type Props = React.HTMLAttributes<HTMLButtonElement>
+const cls = createClassNamePrefix('Button')
+
+export interface Props extends React.HTMLAttributes<HTMLButtonElement> {
+  shape?: 'rounded' | 'default'
+}
 
 export default function ({
   className,
+  shape,
   ...props
 }: Props) {
   return (
     <button
       {...props}
-      className={prefixClass.raw(className).addPrefixed('Button')}
+      className={cls.raw(className, cls.getPrefix()).addPrefixed(shape || 'default')}
     />
   )
 }

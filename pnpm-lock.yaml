@@ -11,8 +11,8 @@ importers:
   packages/components:
     dependencies:
       with-classname-prefix:
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.1.0
+        version: 1.1.0
     devDependencies:
       '@types/react':
         specifier: ^18.2.33
@@ -589,7 +589,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-helmet-async: 1.3.0(react-dom@18.2.0)(react@18.2.0)
       resolve-cli-args: 1.1.0
-      with-classname-prefix: 1.0.1
+      with-classname-prefix: 1.1.0
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -1770,8 +1770,8 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /with-classname-prefix@1.0.1:
-    resolution: {integrity: sha512-4V7x9QRXAazg9aeg2LRJMEV3XnQYlqJbiJ15qEHY8IjpgZvq922EDXG9fatJa+sCypEDR654BhZXR/VRk0usIw==}
+  /with-classname-prefix@1.1.0:
+    resolution: {integrity: sha512-UZI9Zdl5ngA0I0P5No0ZAtdyIrJceutteVEQFbyyr8bBzGGhgk61sb/Z92qpSlBL2UqsgyuCK7WoJapnaZ7W+Q==}
     dev: false
 
   /wrap-ansi@7.0.0:

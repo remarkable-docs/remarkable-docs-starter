@@ -1,5 +1,7 @@
 import React from "react"
-import prefixClass from "../internal/prefixClass";
+import createClassNamePrefix from "../internal/createClassNamePrefix";
+
+const cls = createClassNamePrefix('Alert')
 
 export interface Props {
   className?: string
@@ -11,7 +13,7 @@ export default function ({
   children
 }: Props) {
   return (
-    <div className={prefixClass.raw(className).addPrefixed('Alert')}>
+    <div className={cls.raw(cls.getPrefix(), className).toString()}>
       {children}
     </div>
   )
