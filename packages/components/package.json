@@ -12,28 +12,28 @@
     "styles.css"
   ],
   "scripts": {
-    "build": "npm run clean && npm run build:css && npm run build:es && npm run build:lib",
-    "build:css": "lessc-watch src/index.less styles.css -ru=all -d src --build",
+    "build": "npm run clean && npm run build:less && npm run build:es && npm run build:lib",
+    "build:less": "lessc-watch src/index.less styles.css -ru=all -d=src --global-vars=prefix=myui --build",
     "build:es": "tsc --outDir es --module esnext",
     "build:lib": "tsc --outDir lib",
     "clean": "rimraf styles.css && rimraf es && rimraf lib",
     "watch": "concurrently -k -r 'npm:watch:*'",
-    "watch:less": "lessc-watch src/index.less styles.css -ru=all -d src",
+    "watch:less": "lessc-watch src/index.less styles.css -ru=all -d=src --global-vars=prefix=myui",
     "watch:ts": "tsc --outDir es --module esnext --watch --pretty false --preserveWatchOutput true"
   },
+  "dependencies": {
+    "with-classname-prefix": "^1.0.1"
+  },
   "devDependencies": {
-    "@types/react": ">=17.0.0",
-    "concurrently": "^7.6.0",
-    "lessc-watch": "^1.0.2",
+    "@types/react": "^18.2.33",
+    "concurrently": "^8.2.2",
+    "lessc-watch": "^1.1.0",
     "react": "^18.2.0",
-    "rimraf": "^4.0.7",
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": ">=17.0.0"
   },
-  "license": "ISC",
-  "dependencies": {
-    "with-classname-prefix": "^1.0.1"
-  }
+  "license": "ISC"
 }

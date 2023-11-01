@@ -1,8 +1,5 @@
 *.swp
 .DS_Store
-es
-lib
 node_modules
 package-lock.json
 yarn.lock
-styles.css

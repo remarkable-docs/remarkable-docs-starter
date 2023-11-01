@@ -4,32 +4,33 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build:docs": "remarkable-docs",
+    "build:docs": "remarkable-docs --empty",
     "build:vite": "tsc && vite build --outDir ./dist/client",
     "build:prerender": "tsc && vite build --outDir ./dist/prerender --ssr ./src/prerender.tsx",
+    "delay": "node -e 'setTimeout(()=>0,1000)'",
     "prerender": "npm run build:vite && npm run build:prerender && node ./dist/prerender/prerender.js",
     "preview": "vite preview --outDir ./dist/client",
     "watch:docs": "remarkable-docs --watch",
-    "watch:vite": "vite",
-    "watch": "concurrently -k -r 'npm:watch:*'"
+    "watch:vite": "npm run delay && vite",
+    "watch": "npm run delay && concurrently -k -r 'npm:watch:*'"
   },
   "dependencies": {
-    "@remarkable-docs/core": "0.0.1-alpha.18",
+    "@remarkable-docs/core": "0.0.1-alpha.24",
     "@remarkable-docs/example-ui": "workspace:^",
-    "@remarkable-docs/ui": "0.0.1-alpha.18",
-    "@types/markdown-it": "*",
-    "concurrently": "^7.6.0",
+    "@remarkable-docs/ui": "0.0.1-alpha.24",
     "prism-themes": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^1.3.0",
-    "react-router-dom": "^6.8.0"
+    "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
+    "@types/markdown-it": "^13.0.5",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
     "@vitejs/plugin-react": "^4.1.0",
-    "remarkable-docs": "0.0.1-alpha.18",
+    "concurrently": "^8.2.2",
+    "remarkable-docs": "0.0.1-alpha.24",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
   }

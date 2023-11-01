@@ -3,7 +3,7 @@ slug: /get-started
 menu: Tutorials
 ---
 
-# Get Started
+# Get started
 
 ## Installation
 

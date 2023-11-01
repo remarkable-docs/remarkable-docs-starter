@@ -1,14 +1,14 @@
 import React from "react"
 import { withClassNamePrefix } from 'with-classname-prefix'
 
-const cls = withClassNamePrefix('example-lib')
+const cls = withClassNamePrefix('myui')
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {}
+export type Props = React.HTMLAttributes<HTMLButtonElement>
 
-export const Button: React.FC<ButtonProps> = ({
+export default function ({
   className,
   ...props
-}) => {
+}: Props) {
   return (
     <button
       {...props}

@@ -1,5 +1,5 @@
 ---
-slug: /components/button
+slug: /components/Button
 menu: Components
 ---
 
@@ -9,16 +9,8 @@ Buttons allow users to take actions with a single click.
 
 ## Usage
 
-```tsx --preview --open
-import { Button } from '@remarkable-docs/example-ui'
-
-export default () => {
-  return (
-    <Button onClick={() => alert('You just clicked the button!')}>
-      Button
-    </Button>
-  )
-}
+```yml --preview
+import: ./index
 ```
 
 ## Props

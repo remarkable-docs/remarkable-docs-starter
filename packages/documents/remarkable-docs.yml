@@ -1,7 +1,5 @@
 docsDir: ./src/docs
 outDir: ./src/.generated-docs
-emptyOutDir: true
-logLevel: verbose
 ui:
   permalink:
     preferShortUrlForMainLanguage: true

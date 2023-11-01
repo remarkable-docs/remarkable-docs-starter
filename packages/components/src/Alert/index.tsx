@@ -1,17 +1,17 @@
 import React from "react"
 import { withClassNamePrefix } from 'with-classname-prefix'
 
-const cls = withClassNamePrefix('example-lib')
+const cls = withClassNamePrefix('myui')
 
-export interface AlertProps {
+export interface Props {
   className?: string
-  children?: React.ReactNode | string;
+  children?: React.ReactNode;
 }
 
-export const Alert: React.FC<AlertProps> = ({
+export default function ({
   className,
   children
-}) => {
+}: Props) {
   return (
     <div className={cls.raw(className).addPrefixed('Alert')}>
       {children}
