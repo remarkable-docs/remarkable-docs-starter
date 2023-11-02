@@ -11,8 +11,8 @@ importers:
   packages/components:
     dependencies:
       with-classname-prefix:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^2.0.0
+        version: 2.0.0
     devDependencies:
       '@types/react':
         specifier: ^18.2.33
@@ -1772,6 +1772,10 @@ packages:
 
   /with-classname-prefix@1.1.0:
     resolution: {integrity: sha512-UZI9Zdl5ngA0I0P5No0ZAtdyIrJceutteVEQFbyyr8bBzGGhgk61sb/Z92qpSlBL2UqsgyuCK7WoJapnaZ7W+Q==}
+    dev: false
+
+  /with-classname-prefix@2.0.0:
+    resolution: {integrity: sha512-uEYzMTh7dkepcvCChsjZdd59MkSp5ql10g0DoscnrnckcPy30FURtK1PGP7FKfJmEZ/0OK0+iZkfvZg4lS8tCA==}
     dev: false
 
   /wrap-ansi@7.0.0:

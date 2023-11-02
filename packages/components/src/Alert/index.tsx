@@ -13,7 +13,7 @@ export default function ({
   children
 }: Props) {
   return (
-    <div className={cls.raw(cls.getPrefix(), className).toString()}>
+    <div className={cls.raw(className).root().toString()}>
       {children}
     </div>
   )

@@ -15,7 +15,7 @@ export default function ({
   return (
     <button
       {...props}
-      className={cls.raw(className, cls.getPrefix()).addPrefixed(shape || 'default')}
+      className={cls.raw(className).root().prefixed(shape || 'default')}
     />
   )
 }
