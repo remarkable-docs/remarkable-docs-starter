@@ -36,14 +36,14 @@ importers:
   packages/documents:
     dependencies:
       '@remarkable-docs/core':
-        specifier: 0.0.1-alpha.24
-        version: 0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33)
+        specifier: 0.0.1-alpha.28
+        version: 0.0.1-alpha.28(@types/react-dom@18.2.14)(@types/react@18.2.33)
       '@remarkable-docs/example-ui':
         specifier: workspace:^
         version: link:../components
       '@remarkable-docs/ui':
-        specifier: 0.0.1-alpha.24
-        version: 0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0)
+        specifier: 0.0.1-alpha.28
+        version: 0.0.1-alpha.28(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0)
       prism-themes:
         specifier: ^1.9.0
         version: 1.9.0
@@ -76,8 +76,8 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       remarkable-docs:
-        specifier: 0.0.1-alpha.24
-        version: 0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33)
+        specifier: 0.0.1-alpha.28
+        version: 0.0.1-alpha.28(@types/markdown-it@13.0.5)(@types/react-dom@18.2.14)(@types/react@18.2.33)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -564,8 +564,8 @@ packages:
     dev: true
     optional: true
 
-  /@remarkable-docs/core@0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33):
-    resolution: {integrity: sha512-MxJOYnJJizkmklXhw9HUpr3oMA4cQ6tKjPBnVF+5QFBlUGqxKLfumxnq9ZVQCOo9tf2SH1GsWJfKl+fEZ0BTGA==}
+  /@remarkable-docs/core@0.0.1-alpha.28(@types/react-dom@18.2.14)(@types/react@18.2.33):
+    resolution: {integrity: sha512-0nm/Xg8ehgjTzzNXu84fRDVcmPdGEdyttC8pXQ3aNgo8Y29HGdy/73E4oT2hdGd4J6NwUT/36y5OaqRW76r/nw==}
     peerDependencies:
       '@types/react': '>=17.0.0'
       '@types/react-dom': '>=17.0.0'
@@ -573,23 +573,21 @@ packages:
       '@types/react': 18.2.33
       '@types/react-dom': 18.2.14
 
-  /@remarkable-docs/ui@0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0):
-    resolution: {integrity: sha512-pFiMPqSLyx6CNh0bypDjIO9TxEFuIcfjhG2vbw3MNd91FAcVBPHyS3KNdZ8Y9KKHDcgImbGhbVjIyGBV3qSjfg==}
+  /@remarkable-docs/ui@0.0.1-alpha.28(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0):
+    resolution: {integrity: sha512-XeaUHYEA0ShjJaup24MqSrQqGVV4TAhDDhyFA8virXQaD+xblwYHvyUng2V/YGdyp3jRKOFW6cj8H2fkLZ5Sug==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
       react-helmet-async: '>=1.0.0'
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33)
-      '@types/markdown-it': 12.2.3
-      '@types/markdown-it-attrs': 4.1.2
+      '@remarkable-docs/core': 0.0.1-alpha.28(@types/react-dom@18.2.14)(@types/react@18.2.33)
       markdown-it: 13.0.2
       markdown-it-attrs: 4.1.6(markdown-it@13.0.2)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-helmet-async: 1.3.0(react-dom@18.2.0)(react@18.2.0)
       resolve-cli-args: 1.1.0
-      with-classname-prefix: 1.1.0
+      with-classname-prefix: 2.0.0
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -629,39 +627,19 @@ packages:
       '@babel/types': 7.23.0
     dev: true
 
-  /@types/fs-extra@9.0.13:
-    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
-    dependencies:
-      '@types/node': 20.8.10
-    dev: true
-
   /@types/linkify-it@3.0.4:
     resolution: {integrity: sha512-hPpIeeHb/2UuCw06kSNAOVWgehBLXEo0/fUs0mw3W2qhqX89PI2yvok83MnuctYGCPrabGIoi0fFso4DQ+sNUQ==}
-
-  /@types/markdown-it-attrs@4.1.2:
-    resolution: {integrity: sha512-54uKOWnYDLd7u1WLmN91w22y+ZtE1pSaCVbSvKvzGhkJMld9nKNtsn6F+tNxhc+LhMNIDmj+odZb+TOm3uinIg==}
-    dependencies:
-      '@types/markdown-it': 13.0.5
-
-  /@types/markdown-it@12.2.3:
-    resolution: {integrity: sha512-GKMHFfv3458yYy+v/N8gjufHO6MSZKCOXpZc5GXIWWy8uldwfmPn98vp81gZ5f9SVw8YYBctgfJ22a2d7AOMeQ==}
-    dependencies:
-      '@types/linkify-it': 3.0.4
-      '@types/mdurl': 1.0.4
+    dev: true
 
   /@types/markdown-it@13.0.5:
     resolution: {integrity: sha512-QhJP7hkq3FCrFNx0szMNCT/79CXfcEgUIA3jc5GBfeXqoKsk3R8JZm2wRXJ2DiyjbPE4VMFOSDemLFcUTZmHEQ==}
     dependencies:
       '@types/linkify-it': 3.0.4
       '@types/mdurl': 1.0.4
+    dev: true
 
   /@types/mdurl@1.0.4:
     resolution: {integrity: sha512-ARVxjAEX5TARFRzpDRVC6cEk0hUIXCCwaMhz8y7S1/PxU6zZS1UMjyobz7q4w/D/R552r4++EhwmXK1N2rAy0A==}
-
-  /@types/node@20.8.10:
-    resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/prop-types@15.7.9:
@@ -1023,9 +1001,9 @@ packages:
       signal-exit: 4.1.0
     dev: true
 
-  /fs-extra@10.1.0:
-    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
-    engines: {node: '>=12'}
+  /fs-extra@11.1.1:
+    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.1.0
@@ -1261,13 +1239,13 @@ packages:
     dev: true
     optional: true
 
-  /markdown-it-anchor@8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.2):
+  /markdown-it-anchor@8.6.7(@types/markdown-it@13.0.5)(markdown-it@13.0.2):
     resolution: {integrity: sha512-FlCHFwNnutLgVTflOYHPW2pPcl2AACqVzExlkGQNsi4CJgqOHN7YTgDd4LuhgN1BFO3TS0vLAruV1Td6dwWPJA==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
+      '@types/markdown-it': 13.0.5
       markdown-it: 13.0.2
     dev: true
 
@@ -1498,27 +1476,25 @@ packages:
   /regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
 
-  /remarkable-docs@0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33):
-    resolution: {integrity: sha512-p1f2/18CnAfk6Y57HRDDr/MgfmuoT0tVRCn65L1FKDRCLciq0MJS6wcFO/dmfCxpb1mYys8LGH2YJGcNBg8XQQ==}
+  /remarkable-docs@0.0.1-alpha.28(@types/markdown-it@13.0.5)(@types/react-dom@18.2.14)(@types/react@18.2.33):
+    resolution: {integrity: sha512-mKtkOBVWs+djYZkKGH24aFqfjIvYWbV1gJHthNn9mbhq4q6rKXrbqN44nL66EYEAleBHaVA7JdUIoZZhzeNMrQ==}
     hasBin: true
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.24(@types/react-dom@18.2.14)(@types/react@18.2.33)
-      '@types/fs-extra': 9.0.13
-      '@types/markdown-it': 12.2.3
-      '@types/markdown-it-attrs': 4.1.2
+      '@remarkable-docs/core': 0.0.1-alpha.28(@types/react-dom@18.2.14)(@types/react@18.2.33)
       chokidar: 3.5.3
       domutils: 3.1.0
-      fs-extra: 10.1.0
+      fs-extra: 11.1.1
       htmlparser2: 8.0.2
       json5: 2.2.3
       lru-cache: 7.18.3
       markdown-it: 13.0.2
-      markdown-it-anchor: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.2)
+      markdown-it-anchor: 8.6.7(@types/markdown-it@13.0.5)(markdown-it@13.0.2)
       markdown-it-attrs: 4.1.6(markdown-it@13.0.2)
       markdown-it-front-matter: 0.2.3
       resolve-cli-args: 1.1.0
       yaml: 2.3.3
     transitivePeerDependencies:
+      - '@types/markdown-it'
       - '@types/react'
       - '@types/react-dom'
     dev: true
@@ -1707,10 +1683,6 @@ packages:
   /uc.micro@1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
 
-  /undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: true
-
   /universalify@2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
@@ -1769,10 +1741,6 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: true
-
-  /with-classname-prefix@1.1.0:
-    resolution: {integrity: sha512-UZI9Zdl5ngA0I0P5No0ZAtdyIrJceutteVEQFbyyr8bBzGGhgk61sb/Z92qpSlBL2UqsgyuCK7WoJapnaZ7W+Q==}
-    dev: false
 
   /with-classname-prefix@2.0.0:
     resolution: {integrity: sha512-uEYzMTh7dkepcvCChsjZdd59MkSp5ql10g0DoscnrnckcPy30FURtK1PGP7FKfJmEZ/0OK0+iZkfvZg4lS8tCA==}
