@@ -45,7 +45,7 @@ module.exports = defineConfig({
         messages: {
           'doc.nav.prev': 'Previous',
           'doc.nav.next': 'Next',
-          'toc.heading:': '文章目录',
+          'toc.heading': '文章目录',
           'search.placeholder': '搜索文档',
           'search.empty': '未找到与“{keyword}”相关的结果',
           'not.translated': '本文暂未翻译为{language}，当前语言为：{current}。',
