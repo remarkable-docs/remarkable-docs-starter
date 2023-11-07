@@ -39,8 +39,8 @@ importers:
         specifier: workspace:^
         version: link:../components
       '@remarkable-docs/ui':
-        specifier: 0.0.1-alpha.33
-        version: 0.0.1-alpha.33(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0)
+        specifier: 0.0.1-alpha.34
+        version: 0.0.1-alpha.34(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0)
       prism-themes:
         specifier: ^1.9.0
         version: 1.9.0
@@ -73,8 +73,8 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       remarkable-docs:
-        specifier: 0.0.1-alpha.33
-        version: 0.0.1-alpha.33(@types/markdown-it@13.0.5)(@types/react-dom@18.2.14)(@types/react@18.2.33)
+        specifier: 0.0.1-alpha.34
+        version: 0.0.1-alpha.34(@types/markdown-it@13.0.5)(@types/react-dom@18.2.14)(@types/react@18.2.33)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -561,8 +561,8 @@ packages:
     dev: true
     optional: true
 
-  /@remarkable-docs/core@0.0.1-alpha.33(@types/react-dom@18.2.14)(@types/react@18.2.33):
-    resolution: {integrity: sha512-niSxVyhLazTX68zRoF5nwqji8SR/gzph1c6VoRd8goUTaqaoPNcBe/+FwTMHfcXLRORkulRo+3oSfRFnuchj3Q==}
+  /@remarkable-docs/core@0.0.1-alpha.34(@types/react-dom@18.2.14)(@types/react@18.2.33):
+    resolution: {integrity: sha512-T7bmf57hCO0Xf06MR/05bYd914aaLgyJAal+yyJ/d+hOHpUnTRlE3XPNycLxXgGob3VeBpEb/VhhMKX6Rr73rA==}
     peerDependencies:
       '@types/react': '>=17.0.0'
       '@types/react-dom': '>=17.0.0'
@@ -570,14 +570,14 @@ packages:
       '@types/react': 18.2.33
       '@types/react-dom': 18.2.14
 
-  /@remarkable-docs/ui@0.0.1-alpha.33(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0):
-    resolution: {integrity: sha512-D47xEu+QHPkPa9mb9ro5d0elcr6/9p1JN4yiR2539j+2tcht0F4WBCat3WskM0Fw4EAeSVwq/cCxBNE/lJ37yA==}
+  /@remarkable-docs/ui@0.0.1-alpha.34(@types/react-dom@18.2.14)(@types/react@18.2.33)(react-dom@18.2.0)(react-helmet-async@1.3.0)(react@18.2.0):
+    resolution: {integrity: sha512-whfJEs+CjZPDc3bL+a9FFkF9FrC2c+YoM0orYkLHJrxOaJtoi2cQTYd1FuiLqR88SXpAByTsEmb39Pr+aE1yOg==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
       react-helmet-async: '>=1.0.0'
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.33(@types/react-dom@18.2.14)(@types/react@18.2.33)
+      '@remarkable-docs/core': 0.0.1-alpha.34(@types/react-dom@18.2.14)(@types/react@18.2.33)
       markdown-it: 13.0.2
       markdown-it-attrs: 4.1.6(markdown-it@13.0.2)
       react: 18.2.0
@@ -1478,11 +1478,11 @@ packages:
   /regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
 
-  /remarkable-docs@0.0.1-alpha.33(@types/markdown-it@13.0.5)(@types/react-dom@18.2.14)(@types/react@18.2.33):
-    resolution: {integrity: sha512-sf2/YnsPc40/bnmmM7JBe/9LPTacU5+S5yd3VCoj/sl+Z/RxW3MsOx6KmQ3Ty5WlbXHDd8mT72mJysmOqlGe6g==}
+  /remarkable-docs@0.0.1-alpha.34(@types/markdown-it@13.0.5)(@types/react-dom@18.2.14)(@types/react@18.2.33):
+    resolution: {integrity: sha512-la4iUx7GNVF5bTfhAU7/5ugt8uqVzraiuF4/MFTuN6Oe9P+GszgzMpkxrAMxMFhcZb8TiZkcwINFW8T/O1I9ow==}
     hasBin: true
     dependencies:
-      '@remarkable-docs/core': 0.0.1-alpha.33(@types/react-dom@18.2.14)(@types/react@18.2.33)
+      '@remarkable-docs/core': 0.0.1-alpha.34(@types/react-dom@18.2.14)(@types/react@18.2.33)
       chokidar: 3.5.3
       domutils: 3.1.0
       fs-extra: 11.1.1
