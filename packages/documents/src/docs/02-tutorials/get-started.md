@@ -8,14 +8,10 @@ menu: Tutorials
 ## Installation
 
 ```sh
-# with pnpm
-pnpm install @remarkable-docs/example-ui
-
-# or just npm if you don't have pnpm installed
-npm install @remarkable-docs/example-ui
+npm i @remarkable-docs/example-ui
 ```
 
-## Import Styles
+## Import styles
 
 Before start using the ui components, please make sure you have the styles imported. Add the following import statement to your entry script.
 
@@ -38,4 +34,4 @@ export default function App() {
 }
 ```
 
-You read the documents for the components for more details.
+You can read the documents for the components for more details.

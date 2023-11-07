@@ -2,31 +2,25 @@ import '@remarkable-docs/ui/styles.css'
 import '@remarkable-docs/example-ui/styles.css'
 import './index.less'
 
-import React, { useCallback } from 'react'
+import React from 'react'
 import { DocsUi } from '@remarkable-docs/ui'
 import { useLocation, useNavigate } from 'react-router-dom'
 import type { DocsUiSsgContextObject } from '@remarkable-docs/ui'
 
-const DocsProvider = React.lazy(() => import('./.generated-docs'))
+const DocsProvider = React.lazy(() => import('./.docs-generated'))
 
-export interface DocsAppProps {
+export default function DocsApp({ ssgContext }: {
   ssgContext?: DocsUiSsgContextObject
-}
-
-export default function DocsApp({ ssgContext }: DocsAppProps) {
+}) {
   const navigate = useNavigate()
   const { pathname } = useLocation()
-  const handleUrlChange = useCallback(
-    (target: string) => navigate(target),
-    [navigate]
-  )
 
   return (
     <React.Suspense>
       <DocsUi
         docsProvider={DocsProvider}
         currentUrl={pathname}
-        handleUrlChange={handleUrlChange}
+        handleUrlChange={navigate}
         ssgContext={ssgContext}
       />
     </React.Suspense>
