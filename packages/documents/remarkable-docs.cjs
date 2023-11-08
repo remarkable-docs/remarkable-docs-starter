@@ -31,15 +31,16 @@ module.exports = defineConfig({
       enforceTrailingSlash: true,
       preferShortUrlForMainLanguage: true
     },
-    links: [],
     languages: [
       {
         code: 'en-US',
-        name: 'English (US)'
+        name: 'English (US)',
+        headerLinks: []
       },
       {
         code: 'zh-CN',
         name: '中文（简体）',
+        headerLinks: [],
         docPageTitleFormat: '{docTitle}',
         previewTitleFormat: '预览：{previewTitle} | {docTitle}',
         messages: {

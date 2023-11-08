@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@remarkable-docs/example-ui": "workspace:^",
-    "@remarkable-docs/ui": "0.0.1-alpha.34",
+    "@remarkable-docs/ui": "0.0.1-alpha.35",
     "prism-themes": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,7 +29,7 @@
     "@types/react-dom": "^18.2.14",
     "@vitejs/plugin-react": "^4.1.0",
     "concurrently": "^8.2.2",
-    "remarkable-docs": "0.0.1-alpha.34",
+    "remarkable-docs": "0.0.1-alpha.35",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
   }
