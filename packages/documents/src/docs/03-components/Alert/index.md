@@ -5,6 +5,6 @@ menu: Components
 
 # Alert
 
-```yml --preview
+```yml --preview --line-numbers --highlight-line=1,4 --open
 import: ./index
 ```

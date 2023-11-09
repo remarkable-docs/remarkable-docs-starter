@@ -6,9 +6,15 @@ body {
 html[data-docs-ui-color-scheme='light'] {
   .docs-ui-source-code {
     @import (less) '../public/prism.css';
+    @import (less, multiple) '../public/prism-line-highlight.css';
+    @import (less, multiple) '../public/prism-line-numbers.css';
 
     .token.operator {
       background-color: transparent;
+    }
+
+    pre[class*='language-'] {
+      background-color: #f6f8fa;
     }
   }
 }
@@ -16,5 +22,11 @@ html[data-docs-ui-color-scheme='light'] {
 html[data-docs-ui-color-scheme='dark'] {
   .docs-ui-source-code {
     @import (less) '../node_modules/prism-themes/themes/prism-atom-dark.css';
+    @import (less, multiple) '../public/prism-line-highlight.css';
+    @import (less, multiple) '../public/prism-line-numbers.css';
+
+    .token.class-name {
+      text-decoration: none;
+    }
   }
 }

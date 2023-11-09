@@ -9,7 +9,7 @@ Buttons allow users to take actions with a single click.
 
 ## Usage
 
-```yml --preview
+```yml --preview --mobile
 import: ./index
 ```
 
